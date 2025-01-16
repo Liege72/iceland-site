@@ -1,0 +1,217 @@
+@import url("./fonts.css");
+
+#comments-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* comment form */
+#comment-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 20px;
+}
+.comment-field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.comment-field input, textarea {
+    padding: 8px;
+    border: 2px solid #343434;
+    border-radius: 5px;
+    outline: none;
+}
+.comment-field input:focus, textarea:focus {
+    border: 2px solid #35a4ff;
+    outline: none;
+}
+#form-btn {
+    padding: 10px;
+    background-color: #35a4ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+    justify-content: flex-end;
+}
+
+/* comments text and slider */
+.comments-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* slider */
+.mode-slider {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    border: 2px solid #35a4ff;
+    border-radius: 50px;
+    overflow: hidden;
+    background-color: white;
+}
+.mode-slider input {
+    display: none;
+}
+.mode-slider label {
+    padding: 8px 20px;
+    cursor: pointer;
+    text-align: center;
+    flex: 1;
+    z-index: 1;
+    transition: color 0.2s ease-in-out;
+}
+.mode-slider-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #35a4ff;
+    border-radius: 25px;
+    transition: left 0.2s ease;
+}
+.mode-slider img {
+    height: 18px;
+}
+#compact-switch:checked ~ .mode-slider-background {
+    left: 0;
+}
+#cozy-switch:checked ~ .mode-slider-background {
+    left: 50%;
+    color: white;
+}
+#compact-switch:checked + label {
+    background-color: #35a4ff;
+    border: 2px solid #35a4ff;
+    border-radius: 25px;    
+}
+#cozy-switch:checked + label {
+    background-color: #35a4ff;
+    border: 2px solid #35a4ff;
+    border-radius: 25px;
+}
+
+/* comments */
+#comments {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.comment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #dbdbdb;
+    border-radius: 20px;
+}
+.comment-like button {
+    background: none;
+    border: none;
+}
+.comment-like {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.comment .like-icon {
+    cursor: pointer;
+    height: 20px;
+}
+.comment-content {
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat";
+    gap: 10px;
+}
+.comment-header {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+.comment-name-time {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.comment-user-img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    font-family: "Montserrat";
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.comment b {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+.comment p {
+    margin: 0;
+    font-size: 16px;
+}
+#comment-time {
+    font-size: 12px;
+}
+
+/* comments compact mode */
+/* .comments.compact {
+    gap: 2px;
+}
+.comment.compact {
+    background-color: white;
+    padding: 0;
+    gap: 10px;
+    border-radius: 0;
+}
+.comment.compact:first-child {
+    border-top: 1px solid black;
+}
+.comment.compact:last-child {
+    border-bottom: 1px solid black;
+}
+.comment.compact {
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+}
+.comment.compact p {
+    margin: 0;
+}
+.comment.compact .comment-user-img {
+    display: none;
+}
+.comment.compact .comment-content b {
+    height: auto;
+} */
+
+#about-page .mode-slider {
+    width: 124px;
+}
+
+/* comments form small */
+@media screen and (max-width: 800px) {
+    #comment-form {
+        width: 100%;
+    }
+    .comment b {
+        display: block;
+        max-width: 200px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+}

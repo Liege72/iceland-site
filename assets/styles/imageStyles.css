@@ -1,0 +1,83 @@
+@media screen and (min-width: 1580px) {
+    #glacier-lagoon-banner-image {
+        background-image: url("../images/glacierLagoonBanner.png");
+        height: 400px;
+    }
+    #glacier-lagoon-banner-image span {
+        text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.8);
+    }
+    #glacier-lagoon-image {
+        width: 40%;
+        border-radius: 1.5vw;
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    }
+    #glacier-lagoon-text {
+        width: 40%;
+        font-size: 24px;
+    }
+    #map-wrapper {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+#blue-lagoon-banner-image {
+    background-image: url("../images/blueLagoonBanner.png");
+    height: 400px;
+}
+
+#culture-banner-image {
+    background-image: url("../images/cultureBanner.png");
+    height: 400px;
+}
+
+#geography-banner-image {
+    background-image: url("../images/geographyBanner.png");
+    height: 400px;
+}
+
+#northernLights-banner-image {
+    background-image: url("../images/northernLights.png");
+    height: 400px;
+}
+
+#seljalandsfoss-banner-image {
+    background-image: url("../images/seljalandsfossBanner.png");
+    height: 400px;
+}
+
+#waterfalls-banner-image {
+    background-image: url("../images/waterfall2.png");
+    height: 400px;
+}
+
+#glacier-lagoon-banner-image {
+    background-image: url("../images/glacierLagoonBanner.png");
+    height: 400px;
+}
+
+#glacier-lagoon-banner-image span {
+    text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.8);
+}
+
+#destinations-banner-image {
+    background-image: url("../images/destinationsBanner.png");
+    height: 400px;
+}
+
+#bring-banner-image {
+    background-image: url("../images/whatToBring.png");
+    height: 400px;
+}
+
+#map-wrapper img {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+#map-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    min-width: 300px;
+}

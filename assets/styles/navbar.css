@@ -1,0 +1,125 @@
+@media screen and (min-width: 800px) {
+    nav {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+        margin: 0 auto;
+        width: 100%;
+        z-index: 5;
+        background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0)
+        );
+    }
+    nav a {
+        color: white;
+    }
+    nav ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        gap: 120px;
+        color: white;
+        font-size: 16px;
+    }
+    nav ul li {
+        padding: 20px 0;
+        cursor: pointer;
+    }
+    .dropdown {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: white;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 10px;
+        gap: 10px;
+        z-index: 1;
+    }
+    .dropdown a {
+        color: black;
+    }
+    #learn:hover .dropdown {
+        display: flex;
+    }
+    #visit:hover .dropdown {
+        display: flex;
+    }
+    .dropdown:hover .dropdown {
+        display: flex;
+    }
+    .dropdown a:hover,
+    #home a:hover,
+    #references a:hover {
+        color: #ffac4e !important;
+    }
+    #hamburger,
+    #x,
+    .dropdown-arrow {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    nav {
+        display: flex;
+        background-color: white;
+        justify-content: flex-end;
+        position: sticky;
+        z-index: inherit;
+    }
+    nav a {
+        color: black;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: start;
+        padding: 20px 0;
+        gap: 40px;
+        margin-left: 4%;
+        color: black;
+        font-size: 20px;
+    }
+    nav ul li {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 15px;
+    }
+    nav ul li span {
+        font-weight: bold;
+    }
+    .dropdown {
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+        gap: 10px;
+    }
+    .dropdown-arrow {
+        height: 20px;
+    }
+    .dropdown a:hover,
+    #home a:hover,
+    #references a:hover {
+        color: #ffac4e;
+    }
+    #hamburger,
+    #x {
+        height: 40px;
+        width: 40px;
+        padding: 10px 0;
+        margin-right: 4%;
+        cursor: pointer;
+    }
+    #x {
+        display: none;
+    }
+}

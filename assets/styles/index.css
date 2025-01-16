@@ -1,0 +1,73 @@
+@media screen and (min-width: 1580px) {
+    .home-overlay-large {
+        font-size: 128px;
+    }
+}
+
+@media screen and (max-width: 1580px) {
+    .home-overlay-large {
+        font-size: 10vw;
+    }
+}
+
+#landing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home-image-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.home-overlay-large {
+    color: white;
+    font-weight: bold;
+    margin-top: -130px;
+}
+
+#iceland-text {
+    z-index: 2;
+    position: fixed;
+}
+
+.landing-image {
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+}
+
+#home-image-top {
+    background-image: url("../images/homeImageTop.png");
+    position: absolute;
+    z-index: 1;
+}
+
+#home-image-center {
+    background-image: url("../images/homeImageCenter.png");
+    position: absolute;
+    z-index: 4;
+    margin-top: -10px;
+}
+
+#home-image-bottom {
+    background-image: url("../images/homeImageBottom.png");
+    z-index: 3;
+    margin-top: -10px;
+}
+
+#home-image-1 {
+    background-image: url("../images/geography.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}

@@ -1,0 +1,26 @@
+@media screen and (min-width: 1580px) {
+    .bring-item {
+        gap: 20px;
+    }
+}
+
+#bring-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    align-items: baseline;
+}
+
+#bring-wrapper span {
+    font-size: 24px;
+}
+
+#bring-wrapper ol li {
+    font-size: 20px;
+}
+
+.bring-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
